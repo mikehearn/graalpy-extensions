@@ -1,7 +1,7 @@
 import org.graalvm.python.pyinterfacegen.build.mavenBundleRepository
 
 plugins {
-    kotlin("jvm") version "2.2.10"
+    kotlin("jvm") version "2.4.10"
     java
     `maven-publish`
     id("j2pyi.convention")
@@ -28,7 +28,7 @@ tasks.test {
     useJUnitPlatform()
 }
 kotlin {
-    jvmToolchain(21)
+    jvmToolchain(25)
 }
 
 publishing {

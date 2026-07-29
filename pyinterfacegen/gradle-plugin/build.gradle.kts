@@ -4,7 +4,7 @@ import org.graalvm.python.pyinterfacegen.build.readRootPomMetadata
 
 plugins {
     `java-gradle-plugin`
-    kotlin("jvm") version "2.2.10"
+    kotlin("jvm") version "2.4.10"
     `maven-publish`
     id("j2pyi.convention")
 }
@@ -27,8 +27,8 @@ dependencies {
 }
 
 kotlin {
-    // Use the host JDK (21) to avoid toolchain download in this environment
-    jvmToolchain(21)
+    // Use the host JDK (25) to avoid toolchain download in this environment
+    jvmToolchain(25)
 }
 
 java {
